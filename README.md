@@ -40,7 +40,7 @@ $ cd ~/catkin_ws && catkin_make
 
 * ### Launch Simulation World
 
-Empty World
+-Empty World
 
 ![Screenshot from 2021-07-05 00-38-27](https://user-images.githubusercontent.com/85907057/124400850-35749900-dd2e-11eb-8084-57c1dd6f15ee.png)
 
@@ -49,4 +49,23 @@ $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
-TurtleBot3 World
+-TurtleBot3 World
+
+![Screenshot from 2021-07-05 01-21-31](https://user-images.githubusercontent.com/85907057/124401031-82a53a80-dd2f-11eb-962c-3c4a02b141d7.png)
+
+```
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+
+* ### Run SLAM Node
+
+terminal_1:
+
+
+
+```
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+```
+
