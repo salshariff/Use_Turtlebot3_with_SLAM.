@@ -40,14 +40,7 @@ $ cd ~/catkin_ws && catkin_make
 
 * ### Launch Simulation World
 
--Empty World
 
-![Screenshot from 2021-07-05 00-38-27](https://user-images.githubusercontent.com/85907057/124400850-35749900-dd2e-11eb-8084-57c1dd6f15ee.png)
-
-```
-$ export TURTLEBOT3_MODEL=waffle_pi
-$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
-```
 
 -TurtleBot3 World
 
@@ -60,12 +53,29 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 
 * ### Run SLAM Node
 
+![Screenshot from 2021-07-06 23-02-53](https://user-images.githubusercontent.com/85907057/124661354-130a8900-deb0-11eb-9d65-3c34ab1219a5.png)
+
 terminal_1:
-
-
 
 ```
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
+* ### To control the robot
+
+![Screenshot from 2021-07-06 23-03-33](https://user-images.githubusercontent.com/85907057/124660551-03d70b80-deaf-11eb-88bc-b680d0b6b2c4.png)
+
+terminal_2:
+
+```
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+* ### save the map , in terminal_3
+
+![Screenshot from 2021-07-06 23-04-23](https://user-images.githubusercontent.com/85907057/124660961-8fe93300-deaf-11eb-9c11-fa9461d924e0.png)
+
+```
+$ rosrun map_server map_saver -f ~/map
+```
