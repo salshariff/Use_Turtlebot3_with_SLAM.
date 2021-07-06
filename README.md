@@ -74,8 +74,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 * ### save the map , in terminal_3
 
-![Screenshot from 2021-07-06 23-04-23](https://user-images.githubusercontent.com/85907057/124660961-8fe93300-deaf-11eb-9c11-fa9461d924e0.png)
-
+![Screenshot from 2021-07-06 23-25-56](https://user-images.githubusercontent.com/85907057/124662501-98db0400-deb1-11eb-86a8-919a307887e8.png)
 ```
 $ rosrun map_server map_saver -f ~/map
 ```
